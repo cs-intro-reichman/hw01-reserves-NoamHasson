@@ -1,9 +1,26 @@
-/*
- * Generates three random integers, each in a given range [a,b),
- * prints them, and then prints the minimal number that was generated.
- */
+// This program generates 3 randon integers in a given range, prints them, and also points the minimal number. 
 public class GenThree {
-	public static void main(String[] args) {
-		// Put your code here	
-	}
+
+    public static void main(String[] args) {
+
+        int a = Integer.parseInt(args[0]); 
+        int b = Integer.parseInt(args[1]); 
+
+        int max = Math.max(a, b) ;
+        int min = Math.min(a, b) ;
+
+        int res1 = (int)((Math.random() * (max-min)+ min)) ; 
+        int res2 = (int)((Math.random() * (max-min)+ min)) ;
+        int res3 = (int)((Math.random() * (max-min)+ min)) ;
+
+        int min1 = Math.min(res1,res2) ;
+        int minF = Math.min(min1,res3) ;
+
+        System.out.println(res1);
+        System.out.println(res2);
+        System.out.println(res3);
+        System.out.println("the minimal generated number is " + minF);
+        
+    }
+    
 }

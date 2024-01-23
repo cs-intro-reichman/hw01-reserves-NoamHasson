@@ -4,6 +4,16 @@
  */
 public class Coins {
 	public static void main(String[] args) {
-		// Put your code here
-	}
-}
+		
+		int bigNum = Integer.parseInt(args[0]);
+        int quarter = 25 ;
+        int cent = 1 ;
+        int resQuar = bigNum/quarter ;
+        int resCent = bigNum%quarter ; 
+
+        System.out.println("Use " + resQuar + " quarters and " + resCent + " cents");
+      
+          }
+        
+  }
+	
