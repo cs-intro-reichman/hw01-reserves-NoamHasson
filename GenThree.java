@@ -19,7 +19,7 @@ public class GenThree {
         System.out.println(res1);
         System.out.println(res2);
         System.out.println(res3);
-        System.out.println("the minimal generated number is " + minF);
+        System.out.println("The minimal generated number is: " + minF);
         
     }
     
